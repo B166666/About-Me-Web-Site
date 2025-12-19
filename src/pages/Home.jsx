@@ -41,7 +41,7 @@ function Home() {
 
 
 
-    <div style={{ color: 'red', position: 'absolute', zIndex: 10 }}>hello</div>
+    <div style={{ color: 'lightpink', position: 'absolute', zIndex: 10 }}>Hi Im Taikey. :3</div>
 
     </>
 
