@@ -1,0 +1,100 @@
+body {
+   
+    background-color: #ffffff;
+}
+
+.top-bar-container {
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; /* This adds space between the home button and search bar */
+    align-items: center;
+    z-index: 20;
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 14px;
+    border-radius: 28px;
+    background: #2b2a2a;
+    transition: background 0.24s ease-in-out;
+    z-index: 20;
+}
+
+.search-div:focus-within{
+    background: #ffffff
+}
+
+.search-icon {
+    color: rgb(189, 184, 184); /* change color here (e.g. "black", "#000", "#ff0000") */
+    font-size: 24px; /* adjust icon size if needed */
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.Home-icon {
+    
+   color: rgb(255, 255, 255); /* change color here (e.g. "black", "#000", "#ff0000") */
+    font-size: 24px; /* adjust icon size if needed */
+    margin-left: 0px;
+    vertical-align: middle;
+}
+
+.input-search {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-left: 8px;
+    width: 230px;
+    
+}
+
+
+.take-me-home {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 12px;
+    border-radius: 28px;
+    background: #2b2a2a;
+    --background-elevated-base: #1f1f1f;
+    --background-elevated-highlight: #2a2a2a;
+    transition: background 0.24s ease-in-out;
+    z-index: 20;
+}
+
+.take-me-home:hover {
+    background: #3a3a3a;
+    cursor: pointer;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px; /* Add padding to avoid overlap with the top bar */
+}
+
+.movies-column,
+.shows-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 45%; /* Assign width to each column */
+}
+
+.movies-column h2,
+.shows-column h2 {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}

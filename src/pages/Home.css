@@ -1,0 +1,29 @@
+
+.Home-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    background: black;
+    overflow: hidden;
+}
+
+
+.falling{
+    font: 1.3em sans-serif;
+    position: absolute;
+    top: -50px;
+    animation: fall-and-rotate 5s linear infinite;
+    overflow: hidden;
+    color: rgb(255, 172, 251);
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+@keyframes fall-and-rotate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
