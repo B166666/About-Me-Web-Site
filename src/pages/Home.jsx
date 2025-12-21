@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import "./Home.css";
 import TextType from './TextType';
-import PixelTrail from './PixelTrail';
+import Antigravity from './Antigravity';
+
+
 
 
 
@@ -10,6 +12,9 @@ function Home() {
   const [isPageVisible, setIsPageVisible] = useState(!document.hidden);
   const [x, setx] = useState(0);
   const [fate, setfate] = useState("");
+  
+
+
 
   useEffect(() => {
     const handleVisibilityChange = () => {
@@ -22,6 +27,8 @@ function Home() {
       document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, []);
+
+
 
   useEffect(() => {
     let interval;
@@ -101,7 +108,7 @@ function Home() {
       <div className="no" onClick={() => {setx(1)}}>No</div>
         <div id="fate" style={{position: 'absolute', top: '70px', left: '0px', color: 'lightpink', fontFamily: 'Bradley Hand, cursive', fontSize: '0.8em' }}>
         <TextType 
-        text={fate}
+        text={[fate]}
         typingSpeed={100}
         pauseDuration={3000}
         showCursor={true}
@@ -113,16 +120,23 @@ function Home() {
   
     </div>
 
-  <div style={{ height: '500px', position: 'relative', overflow: 'hidden'}}>  
-  <PixelTrail
-    gridSize={100}
-    trailSize={0.08}
-    maxAge={100}
-    interpolate={0}
-    color="#ff2990"
-    gooeyFilter={{ id: "custom-goo-filter", strength: 2 }}
-   />
-  </div>
+
+
+      <div style={{ width: '100%', height: '780px', position: 'relative' }}>
+        <Antigravity
+          count={300}
+          magnetRadius={5}
+          ringRadius={9}
+          waveSpeed={0.4}
+          waveAmplitude={1}
+          particleSize={1}
+          lerpSpeed={0.05}
+          color={'rgb(85, 6, 91)'}
+          autoAnimate={true}
+          particleVariance={1}
+        />
+      </div>
+
     
     </>
 
