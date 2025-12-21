@@ -129,11 +129,7 @@ function Home() {
           ringRadius={9}
           waveSpeed={0.4}
           waveAmplitude={1}
-<<<<<<< HEAD
           particleSize={0.5}
-=======
-          particleSize={1}
->>>>>>> 2e0a419b247ce632b3b73973784133dc3fec4703
           lerpSpeed={0.05}
           color={'rgb(85, 6, 91)'}
           autoAnimate={true}
