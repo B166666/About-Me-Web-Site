@@ -1,0 +1,91 @@
+
+.Home-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    background: black;
+    overflow: hidden;
+}
+
+
+.falling{
+    font: 1.3em sans-serif;
+    position: absolute;
+    top: -50px;
+    animation: fall-and-rotate 6s linear infinite;
+    overflow: hidden;
+    color: rgb(255, 172, 251);
+    font-family: 'Bradley Hand', cursive;
+}
+
+@keyframes fall-and-rotate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+
+@keyframes fadeInOut {
+    0%, 90%, 100% {
+        opacity: 0;
+    }
+    10%, 80% {
+        opacity: 1;
+    }
+}
+
+.box1 {
+    position: absolute;
+    top: 100%;
+    left: 17%;
+    width: 600px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    margin: lightpink;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.box1:hover {
+    opacity: 1;
+}
+.inside {
+    color: rgb(255, 141, 179);
+    font-family: 'Bradley Hand', cursive;
+    font-size: 0.8em;
+    font-family: 'Bradley Hand', cursive;
+}
+.yes {
+    position: absolute;
+    font-size: 0.3em;
+    top: 30px;
+    left: 80px;
+    color: rgb(149, 1, 104);
+    font-family: 'Bradley Hand', cursive;
+    font-size: 1em;
+    
+
+}
+.yes:hover{
+    cursor: pointer;
+    
+}
+
+.no {
+    position: absolute;
+    font-size: 0.3em;
+    top: 30px;
+    left : 20px;
+    color: hsl(0, 79%, 72%);
+    font-family: 'Bradley Hand', cursive;
+    font-size: 1em;
+    
+}
+.no:hover{
+    cursor: pointer;
+    
+}
+
