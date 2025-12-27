@@ -5,44 +5,42 @@ import { useEffect, useRef } from 'react';
 import './card.css'
 
 
-function MovieCard({Movie}){
+function Showcard({show, onHover}){
     const Navigate = useNavigate();
     const cardRef = useRef(null);
-
+   
     useEffect(() => {
 
         const mycard = cardRef.current
-        if(!mycard){return;}
+        if(!mycard) return
         const go = () => {
-            Navigate(`/mclip${Movie.id}`)
-            
+            Navigate(`/sclip${show.id}`)
         }
-        mycard.addEventListener('click', go)
-        
+        mycard.addEventListener('click',  go)
 
         return () => {
             mycard.removeEventListener('click', go)
         }
 
 
-    }, [Movie.id, Navigate])
+    }, [show.id, Navigate])
 
     
 
     return(
-        <div className="card" ref={cardRef}>
+        <div className="card" ref={cardRef} onMouseEnter={() => onHover(show.id)}>
             <div className="card_left">
-                <img src={Movie.url} alt={Movie.name} />
+                <img src={show.url} alt={show.name} />
             </div>
             <div className="card_right">
-                <h1>{Movie.name}</h1>
+                <h1>{show.name}</h1>
                 <div className="card_right__details">
                     <ul>
                     
                     </ul>
                 </div>
                 <div className="card_right__review">
-                    <p>{Movie.info}</p>
+                    <p>{show.info}</p>
                 </div>
             </div>
         </div>
@@ -51,4 +49,4 @@ function MovieCard({Movie}){
 
 }
 
-export default MovieCard;
+export default Showcard;

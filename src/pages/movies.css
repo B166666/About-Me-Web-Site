@@ -1,8 +1,21 @@
-body {
-   
-    background-color: #ffffff;
+.home1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    scrollbar-color: rgb(117, 115, 115) transparent;
 }
 
+.wave {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+}
 .top-bar-container {
     position: fixed;
     top: 1%;
@@ -78,6 +91,8 @@ body {
     display: flex;
     justify-content: space-around;
     padding-top: 80px; /* Add padding to avoid overlap with the top bar */
+    position: relative;
+    z-index: 10; /* ensure content sits above the background canvas */
 }
 
 .movies-column,
@@ -87,6 +102,8 @@ body {
     align-items: center;
     gap: 50px;
     width: 45%; /* Assign width to each column */
+    position: relative;
+    z-index: 10;
 }
 
 .movies-column h2,

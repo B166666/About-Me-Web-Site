@@ -80,64 +80,65 @@ function Home() {
 
   return (
     <>
-    <div className="Home-container">
-      {items.map(item => (
-        <div
-          key={item.id}
-          className="falling"
-          style={{ left: `${item.left}vw` }}
-        >
-          .
+    <div className="home-page">
+        <div className="Home-container">
+          {items.map(item => (
+            <div
+              key={item.id}
+              className="falling"
+              style={{ left: `${item.left}vw` }}
+            >
+              .
+            </div>
+          ))}
         </div>
-      ))}
+
+        <div style={{ color: 'lightpink', position: 'absolute', zIndex: 10, fontFamily: 'Bradley Hand, cursive' }}>
+          <TextType 
+            text={["Hi Im Taikey. :3 "]}
+            typingSpeed={100}
+            pauseDuration={3000}
+            showCursor={true}
+            cursorCharacter="|"
+          />
+        </div>
+
+        <div className="box1">
+          <div className="inside">do you believe in fate?</div>
+          <div className="yes" onClick={() => {setx(2)}}>Yes</div>
+          <div className="no" onClick={() => {setx(1)}}>No</div>
+            <div id="fate" style={{position: 'absolute', top: '70px', left: '0px', color: 'lightpink', fontFamily: 'Bradley Hand, cursive', fontSize: '0.8em' }}>
+            <TextType 
+            text={[fate]}
+            typingSpeed={100}
+            pauseDuration={3000}
+            showCursor={true}
+            cursorCharacter="|"
+          />
+
+
+          </div>
+      
+        </div>
+
+
+
+          <div style={{ width: '100%', height: '780px', position: 'relative' }}>
+            <Antigravity
+              count={300}
+              magnetRadius={5}
+              ringRadius={9}
+              waveSpeed={0.4}
+              waveAmplitude={1}
+              particleSize={0.5}
+              lerpSpeed={0.05}
+              color={'rgb(85, 6, 91)'}
+              autoAnimate={true}
+              particleVariance={1}
+            />
+          </div>
+
     </div>
-
-    <div style={{ color: 'lightpink', position: 'absolute', zIndex: 10, fontFamily: 'Bradley Hand, cursive' }}>
-      <TextType 
-        text={["Hi Im Taikey. :3 "]}
-        typingSpeed={100}
-        pauseDuration={3000}
-        showCursor={true}
-        cursorCharacter="|"
-      />
-    </div>
-
-    <div className="box1">
-      <div className="inside">do you believe in fate?</div>
-      <div className="yes" onClick={() => {setx(2)}}>Yes</div>
-      <div className="no" onClick={() => {setx(1)}}>No</div>
-        <div id="fate" style={{position: 'absolute', top: '70px', left: '0px', color: 'lightpink', fontFamily: 'Bradley Hand, cursive', fontSize: '0.8em' }}>
-        <TextType 
-        text={[fate]}
-        typingSpeed={100}
-        pauseDuration={3000}
-        showCursor={true}
-        cursorCharacter="|"
-      />
-
-
-      </div>
-  
-    </div>
-
-
-
-      <div style={{ width: '100%', height: '780px', position: 'relative' }}>
-        <Antigravity
-          count={300}
-          magnetRadius={5}
-          ringRadius={9}
-          waveSpeed={0.4}
-          waveAmplitude={1}
-          particleSize={0.5}
-          lerpSpeed={0.05}
-          color={'rgb(85, 6, 91)'}
-          autoAnimate={true}
-          particleVariance={1}
-        />
-      </div>
-
-    
     </>
 
   )

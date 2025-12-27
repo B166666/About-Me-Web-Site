@@ -2,6 +2,7 @@ import './App.css'
 import Movie from './pages/movies.jsx' 
 import {Route, Routes} from "react-router-dom"
 import Home from './pages/Home.jsx'
+import Show1 from './movies_and_shows/sclip1.jsx'
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} /> 
 
-        <Route path='Favorites' element={<Movie/>}/>
+        <Route path='/favorites' element={<Movie/>}/>
+        <Route path='/sclip1' element={<Show1/>}/>
 
       </Routes>
       
