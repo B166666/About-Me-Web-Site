@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 import './card.css'
 
 
-function MovieCard({Movie}){
+function MovieCard({Movie, onHover}){
     const Navigate = useNavigate();
     const cardRef = useRef(null);
 
@@ -14,7 +14,7 @@ function MovieCard({Movie}){
         const mycard = cardRef.current
         if(!mycard){return;}
         const go = () => {
-            Navigate(`/mclip${Movie.id}`)
+            Navigate(`/Movie${Movie.id}`)
             
         }
         mycard.addEventListener('click', go)
@@ -30,7 +30,7 @@ function MovieCard({Movie}){
     
 
     return(
-        <div className="card" ref={cardRef}>
+        <div className="card" ref={cardRef} onMouseEnter={() => onHover(Movie.id)}>
             <div className="card_left">
                 <img src={Movie.url} alt={Movie.name} />
             </div>

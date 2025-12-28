@@ -2,8 +2,8 @@ import './App.css'
 import Movie from './pages/movies.jsx' 
 import {Route, Routes} from "react-router-dom"
 import Home from './pages/Home.jsx'
-import Show1 from './movies_and_shows/sclip1.jsx'
-
+import MovieOne from './movies_and_shows/MovieOne.jsx'
+import ShowOne from './movies_and_shows/ShowOne.jsx'
 
 function App() {
 
@@ -13,7 +13,8 @@ function App() {
         <Route path="/" element={<Home/>} /> 
 
         <Route path='/favorites' element={<Movie/>}/>
-        <Route path='/sclip1' element={<Show1/>}/>
+        <Route path='/Movie1' element={<MovieOne/>}/>
+        <Route path='/Show1' element={<ShowOne/>}/>
 
       </Routes>
       

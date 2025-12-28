@@ -14,10 +14,10 @@ function Showcard({show, onHover}){
         const mycard = cardRef.current
         if(!mycard) return
         const go = () => {
-            Navigate(`/sclip${show.id}`)
+            Navigate(`/Show${show.id}`)
         }
         mycard.addEventListener('click',  go)
-
+       
         return () => {
             mycard.removeEventListener('click', go)
         }
@@ -28,7 +28,7 @@ function Showcard({show, onHover}){
     
 
     return(
-        <div className="card" ref={cardRef} onMouseEnter={() => onHover(show.id)}>
+        <div className="card" ref={cardRef} onMouseEnter={() => {onHover(show.id)}}>
             <div className="card_left">
                 <img src={show.url} alt={show.name} />
             </div>
