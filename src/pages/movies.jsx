@@ -13,9 +13,9 @@ import './movies.css'
 function Movie(){
     const [search, setSearch] = useState("")
     const navigate = useNavigate();
-    const [red, setred] = useState(0.5)
-    const [green, setgreen] = useState(0.5)
-    const [blue, setblue] = useState(0.5)
+    const [red, setred] = useState(1)
+    const [green, setgreen] = useState(1)
+    const [blue, setblue] = useState(1)
     const movies = [
         {id:1,name:"fight club", url:fightClubImg, info:"HOLY FUCKING SHIT. This here is a masterpiece."},
         {id:2, name:"One flew over the cuckoos nest", url:MeAndBro, info:"Chief is literally me. (┬┬﹏┬┬)"},
@@ -41,7 +41,7 @@ function Movie(){
                     enableMouseInteraction={true}
                     mouseRadius={0.2}
                     colorNum={40}
-                    waveAmplitude={0.50}
+                    waveAmplitude={0.3}
                     waveFrequency={3.3}
                     waveSpeed={0.01}
                  />
@@ -82,7 +82,9 @@ function Movie(){
                                 Movie={movie}
                                 onHover={(id) => {
                                     if ( id === 1){
-                                        
+                                        setred(0)
+                                        setgreen(0)
+                                        setblue(0.5)
                                     }
                                 }}
                                 
