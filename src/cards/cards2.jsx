@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 import './card.css'
 
 
-function Showcard({show, onHover}){
+function Showcard({show, onHover}) {
     const Navigate = useNavigate();
     const cardRef = useRef(null);
    
@@ -17,7 +17,6 @@ function Showcard({show, onHover}){
             Navigate(`/Show${show.id}`)
         }
         mycard.addEventListener('click',  go)
-       
         return () => {
             mycard.removeEventListener('click', go)
         }

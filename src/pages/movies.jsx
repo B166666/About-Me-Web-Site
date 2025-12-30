@@ -85,6 +85,10 @@ function Movie(){
                                         setred(0)
                                         setgreen(0)
                                         setblue(0.5)
+                                    } else if( id === 2 ){
+                                        setred(1)
+                                        setgreen(1)
+                                        setblue(1)
                                     }
                                 }}
                                 
