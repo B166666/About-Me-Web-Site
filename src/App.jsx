@@ -4,7 +4,7 @@ import {Route, Routes} from "react-router-dom"
 import Home from './pages/Home.jsx'
 import MovieOne from './movies_and_shows/MovieOne.jsx'
 import ShowOne from './movies_and_shows/ShowOne.jsx'
-
+import MovieThree from './movies_and_shows/MovieThree.jsx'
 function App() {
 
   return(
@@ -15,7 +15,7 @@ function App() {
         <Route path='/favorites' element={<Movie/>}/>
         <Route path='/Movie1' element={<MovieOne/>}/>
         <Route path='/Show1' element={<ShowOne/>}/>
-
+        <Route path='/Movie3' element={<MovieThree/>}/>
       </Routes>
       
     </main>

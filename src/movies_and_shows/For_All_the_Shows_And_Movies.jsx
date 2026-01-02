@@ -21,10 +21,10 @@ function ForAll({ r, b, g, mouseRadius, colorNum, waveAmplitude, waveFrequency, 
                 waveFrequency={waveFrequency}
                 waveSpeed={waveSpeed}
             /> </div>
-            <div className='kim' style={{width: '700px', height:'700px', padding:'20px', margin:'auto', zIndex:'34', position:'relative', top:'200px'}}>
+            <div className='kim' style={{width: '900px', height:'900px', padding:'20px', margin:'auto', zIndex:'34', position:'relative', top:'200px'}}>
                 <LiteYouTubeEmbed
                     id={id}
-                    title="Better Call Saul | Official Trailer | Netflix"
+                    
                 />
             </div>
             

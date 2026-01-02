@@ -85,10 +85,15 @@ function Movie(){
                                         setred(0)
                                         setgreen(0)
                                         setblue(0.5)
+                                        
                                     } else if( id === 2 ){
                                         setred(1)
                                         setgreen(1)
                                         setblue(1)
+                                    } else if ( id === 3 ){
+                                        setred(1);
+                                        setgreen(0.7);
+                                        setblue(0.5);
                                     }
                                 }}
                                 
@@ -108,7 +113,7 @@ function Movie(){
                                  onHover={(id) => {
                                     if( id === 1 ) {
                                         setred(1);
-                                        setgreen(0.8);
+                                        setgreen(0.9);
                                         setblue(0.5);
                                     }
                                  }}
