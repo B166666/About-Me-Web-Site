@@ -18,3 +18,29 @@
     bottom: 0;
     overflow-y: scroll;
 }
+
+.words_for_movie_one {
+    position: fixed;
+    top: 90%;
+    left: 80%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.words_for_movie_one .two {
+    font-weight: bold;
+    font-size: 25px;
+    animation: blueShades 10s infinite;
+}
+
+@keyframes blueShades {
+    0% { color: #0000FF; }
+    14% { color: #0033FF; }
+    28% { color: #0066FF; }
+    42% { color: #0099FF; }
+    56% { color: #00CCFF; }
+    70% { color: #00FFFF; }
+    85% { color: #0099FF; }
+    100% { color: #0000FF; }
+}

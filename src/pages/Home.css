@@ -97,3 +97,33 @@
     
 }
 
+@keyframes pinkShades {
+    0% { color: #760f46; }
+    14% { color: #9f2f85; }
+    28% { color: #7b0983; }
+    42% { color: #b95eb7; }
+    56% { color: #711a3a; }
+    70% { color: #ca41a6; }
+    85% { color: #d134b9; }
+    100% { color: #7d0455; }
+}
+
+
+.moviesAndShows {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    animation: pinkShades 20s infinite;
+    font-family: 'Bradley Hand', cursive;
+}
+
+.twoo {
+    position: absolute;
+    left: 30%;
+}

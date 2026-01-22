@@ -62,7 +62,7 @@ function Home() {
       element = document.getElementsByClassName("yes");
       element[0].style.visibility = "hidden";
      
-      setfate("dont you find it scary of the idea that we dont have any control over any of our decisions? fate really just means that we dont have any control over our lives and i dont think that true. you are here because you choose to be here.")
+      setfate("complix universal mathmatical equations, that mite be the case for some peaople but not for those with a true soul.")
     } else if (x === 2){
 
       let fateElement = document.getElementById("fate");
@@ -73,13 +73,15 @@ function Home() {
       element = document.getElementsByClassName("yes");
       element[0].style.visibility = "hidden";
       
-      setfate("yes thats the right answer. fate is not real. and it will never be real. our decisions are not caused by some complix universal mathmatical equations, that mite be the case for some peaople but not for those with a true soul.")
+      setfate("complix universal mathmatical equations, that mite be the case for some people but not for those with a true soul.")
     }
 
   }, [x]);
 
   return (
     <>
+   <a href="/favorites"><div className="moviesAndShows">My Favorites Movies<div className="twoo">and Shows</div></div></a>
+
     <div className="home-page">
         <div className="Home-container">
           {items.map(item => (
@@ -95,7 +97,7 @@ function Home() {
 
         <div style={{ color: 'lightpink', position: 'absolute', zIndex: 10, fontFamily: 'Bradley Hand, cursive' }}>
           <TextType 
-            text={["Hi Im Taikey. :3 "]}
+            text={["Hi Im Taikey. "]}
             typingSpeed={100}
             pauseDuration={3000}
             showCursor={true}
@@ -118,6 +120,7 @@ function Home() {
 
 
           </div>
+          
       
         </div>
 
@@ -130,13 +133,14 @@ function Home() {
               ringRadius={9}
               waveSpeed={0.4}
               waveAmplitude={1}
-              particleSize={0.5}
+              particleSize={0.7}
               lerpSpeed={0.05}
-              color={'rgb(85, 6, 91)'}
+              color={'rgba(103, 31, 108, 1)'}
               autoAnimate={true}
               particleVariance={1}
             />
           </div>
+
 
     </div>
     </>
