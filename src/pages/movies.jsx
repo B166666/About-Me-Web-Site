@@ -113,7 +113,7 @@ function Movie(){
                                  onHover={(id) => {
                                     if( id === 1 ) {
                                         setred(1);
-                                        setgreen(0.9);
+                                        setgreen(0.7);
                                         setblue(0.5);
                                     }
                                  }}
