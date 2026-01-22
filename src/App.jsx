@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx'
 import MovieOne from './movies_and_shows/MovieOne.jsx'
 import ShowOne from './movies_and_shows/ShowOne.jsx'
 import MovieThree from './movies_and_shows/MovieThree.jsx'
+import MovieTwo from './movies_and_shows/movieTwo.jsx'
 function App() {
 
   return(
@@ -16,6 +17,7 @@ function App() {
         <Route path='/Movie1' element={<MovieOne/>}/>
         <Route path='/Show1' element={<ShowOne/>}/>
         <Route path='/Movie3' element={<MovieThree/>}/>
+        <Route path='/Movie2' element={<MovieTwo/>}/>
       </Routes>
       
     </main>
